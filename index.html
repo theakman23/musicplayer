@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--müzik çalıcısı-->
+    <div class="music-player">
+        <!--oynatma listesi-->
+        <button id="playlist">
+            <i class="fa-regular fa-angle-down"></i>
+        </button>
+        <!--şarkıcı resmi-->
+        <img src="./muzik/ibo.jpeg" alt="" id="songImage">
+        <!--şarkı detayı-->
+        <div class="song-details">
+            <p id="songName">su ver leylam</p>
+            <p id="songArtist">ibrahim tatlıses</p>
+        </div>
+        <div class="player-options">
+            <button id="shuffle">
+                <i class="fa-regular fa-shuffle"></i>
+            </button>
+
+            <button id="prev">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+
+            <button id="play">
+                <i class="fa-regular fa-play"></i>
+            </button>
+
+            <button id="pause" class="hide">
+                <i class="fa-regular fa-pause"></i>
+            </button>
+
+            <button id="next">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+
+            <button id="repeat">
+                <i class="fa-regular fa-repeat"></i>
+            </button>
+
+        </div>
+        <!--ses alanı-->
+        <audio id="audio" src="./muzik/suver.mp4" preload="metadata"></audio>
+        <div id="progress-bar">
+            <div id="current-progress"></div>
+        </div>
+        <!--zaman alanı-->
+        <div class="time-container">
+            <span id="current-time">01.43</span>
+            <span id="maxDuration">04.03</span>
+        </div>
+        <!--şarkı lsitesi-->
+        <div id="playlist-container" class="hide">
+            <button id="close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="playlist-songs"></ul>
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--
+        ec6, ec7, ve js versiyonları
+        ec8
+        %1
+
+
+        react, vue, angular &99
+    -->
+<script src="main.js"></script>    
+</body>
+</html>
